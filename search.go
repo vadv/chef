@@ -124,7 +124,7 @@ func (e SearchService) PartialExec(idx, statement string, params map[string]inte
 		// These are the defaults in chef: https://github.com/opscode/chef/blob/master/lib/chef/search/query.rb#L102-L105
 		SortBy: "X_CHEF_id_CHEF_X asc",
 		Start:  0,
-		Rows:   1000,
+		Rows:   5000,
 	}
 
 	fullUrl := fmt.Sprintf("search/%s", query)
